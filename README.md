@@ -2,8 +2,22 @@
 
 ## Getting Started
 
-A Flutter app to display reels from API using Clean Architecture
+A simple Flutter app that display reels from a Golang/Postgress API using Clean Architecture and Bloc Pattern, i also use freezed package, along with json_serializable, simplifying the serialization and deserialization of data from the API by generating code for immutable data classes.
 
+### Run the code
+
+Actually the API only allow localhost:5500 for testing purpose:
+
+```bash
+# Run in the Web
+flutter run -d chrome --web-port 5500
+```
+
+### Result [Watch the video](./result/0816.mp4)
+
+GIF Preview
+
+[![Video Preview](./result/0816.gif)](/result/0816.mp4)
 
 ### Lint and test the code
 
@@ -47,7 +61,6 @@ To (re-)generate the Dart classes the following command could be used:
 flutter pub run build_runner build --delete-conflicting-outputs
 ```
 
-
 ### Configure Sentry plugin for iOS
 
 The Sentry plugin requires a custom change in the `ios/Podfile` file, by adding:
@@ -63,4 +76,4 @@ target 'Runner' do
 end
 ```
 
-Make sure to check out the correct `tag` for your current Sentry plugin version (see the package GitHub files). For more information see [Sentry iOS Platform](https://docs.sentry.io/platforms/apple/guides/ios/).
+Make sure to check out the correct `tag` for your current Sentry plugin version (see the package GitHub files). For more information see [Sentry iOS Platform](https://docs.sentry.io/platforms/apple/guides/ios/)
