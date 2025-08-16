@@ -6,7 +6,7 @@ part of 'reel.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$ReelImpl _$$ReelImplFromJson(Map<String, dynamic> json) => _$ReelImpl(
+_Reel _$ReelFromJson(Map<String, dynamic> json) => _Reel(
   id: (json['id'] as num).toInt(),
   author: json['author'] as String,
   category: json['category'] as String,
@@ -28,23 +28,22 @@ _$ReelImpl _$$ReelImplFromJson(Map<String, dynamic> json) => _$ReelImpl(
   createdAt: DateTime.parse(json['createdAt'] as String),
 );
 
-Map<String, dynamic> _$$ReelImplToJson(_$ReelImpl instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'author': instance.author,
-      'category': instance.category,
-      'chiave': instance.chiave,
-      'chiaveTranslation': instance.chiaveTranslation,
-      'chiaveTranslationEN': instance.chiaveTranslationEN,
-      'chiaveTranslationPR': instance.chiaveTranslationPR,
-      'description': instance.description,
-      'image': instance.image,
-      'lingua': instance.lingua,
-      'livello': instance.livello,
-      'name': instance.name,
-      'subtitles': instance.subtitles,
-      'url': instance.url,
-      'views': instance.views,
-      'visible': instance.visible,
-      'createdAt': instance.createdAt.toIso8601String(),
-    };
+Map<String, dynamic> _$ReelToJson(_Reel instance) => <String, dynamic>{
+  'id': instance.id,
+  'author': instance.author,
+  'category': instance.category,
+  'chiave': instance.chiave,
+  'chiaveTranslation': instance.chiaveTranslation,
+  'chiaveTranslationEN': instance.chiaveTranslationEN,
+  'chiaveTranslationPR': instance.chiaveTranslationPR,
+  'description': instance.description,
+  'image': instance.image,
+  'lingua': instance.lingua,
+  'livello': instance.livello,
+  'name': instance.name,
+  'subtitles': instance.subtitles,
+  'url': instance.url,
+  'views': instance.views,
+  'visible': instance.visible,
+  'createdAt': instance.createdAt.toIso8601String(),
+};

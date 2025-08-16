@@ -1,5 +1,5 @@
-import 'package:blocapidemo/presentation/ui/reels_list_screen.dart';
 import 'package:blocapidemo/presentation/ui/reel_detail_screen.dart';
+import 'package:blocapidemo/presentation/ui/reels_list_screen.dart';
 import 'package:blocapidemo/routes/reel_route_args.dart';
 import 'package:flutter/material.dart';
 

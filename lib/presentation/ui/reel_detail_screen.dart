@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class ReelDetailScreen extends StatefulWidget {
   final Reel reel;
 
-  const ReelDetailScreen({super.key, required this.reel});
+  const ReelDetailScreen({required this.reel, super.key});
 
   @override
   State<ReelDetailScreen> createState() => _ReelDetailScreenState();

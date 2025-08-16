@@ -2,7 +2,7 @@ import 'package:blocapidemo/routes/routing_data.dart';
 
 extension StringExtensions on String {
   RoutingData get routingData {
-    var uriData = Uri.parse(this);
+    final uriData = Uri.parse(this);
     return RoutingData(
       queryParameters: uriData.queryParameters,
       route: uriData.path,

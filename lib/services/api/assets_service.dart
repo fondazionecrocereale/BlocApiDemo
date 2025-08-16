@@ -64,8 +64,8 @@ class AssetsService {
         final json = jsonDecode(remoteResult.unwrap()) as Map<String, dynamic>;
         final apiUrl = json['api_url'] as String?;
         if (apiUrl == null || apiUrl.isEmpty) {
-          return Err(
-            const AppError('Invalid or missing api_url in remote config'),
+          return const Err(
+            AppError('Invalid or missing api_url in remote config'),
           );
         }
         return Ok(apiUrl);
@@ -81,8 +81,8 @@ class AssetsService {
         final json = jsonDecode(assetsResult.unwrap()) as Map<String, dynamic>;
         final apiUrl = json['api_url'] as String?;
         if (apiUrl == null || apiUrl.isEmpty) {
-          return Err(
-            const AppError('Invalid or missing api_url in assets config'),
+          return const Err(
+            AppError('Invalid or missing api_url in assets config'),
           );
         }
         return Ok(apiUrl);
@@ -91,8 +91,8 @@ class AssetsService {
       }
     }
 
-    return Err(
-      const AppError('Failed to fetch API URL from both remote and assets'),
+    return const Err(
+      AppError('Failed to fetch API URL from both remote and assets'),
     );
   }
 }

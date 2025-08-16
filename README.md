@@ -9,6 +9,9 @@ A simple Flutter app that display reels from a Golang/Postgress API using Clean 
 Actually the API only allow localhost:5500 for testing purpose:
 
 ```bash
+# Run in android/iOS
+flutter run
+
 # Run in the Web
 flutter run -d chrome --web-port 5500
 ```
@@ -29,9 +32,6 @@ dart fix --apply
 
 # Make sure that there are no analyzer errors
 flutter analyze
-
-# Check for more lint issues
-flutter pub run dart_code_metrics:metrics lib
 
 # Check the tests pass
 flutter test

@@ -15,5 +15,32 @@ class Subtitle with _$Subtitle {
     required String translationPR,
   }) = _Subtitle;
 
-  factory Subtitle.fromJson(Map<String, dynamic> json) => _$SubtitleFromJson(json);
+  factory Subtitle.fromJson(Map<String, dynamic> json) =>
+      _$SubtitleFromJson(json);
+
+  @override
+  String get endTime => throw UnimplementedError();
+
+  @override
+  bool get isWordKey => throw UnimplementedError();
+
+  @override
+  String get startTime => throw UnimplementedError();
+
+  @override
+  String get text => throw UnimplementedError();
+
+  @override
+  Map<String, dynamic> toJson() {
+    throw UnimplementedError();
+  }
+
+  @override
+  String get translation => throw UnimplementedError();
+
+  @override
+  String get translationEN => throw UnimplementedError();
+
+  @override
+  String get translationPR => throw UnimplementedError();
 }

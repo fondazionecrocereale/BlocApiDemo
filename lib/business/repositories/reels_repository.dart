@@ -14,9 +14,9 @@ class ReelsRepository {
 
   Future<Result<List<Reel>, AppError>> getReels() async {
     if (!useHttp) {
-      return Err(const AppError('Non-HTTP data source not supported'));
+      return const Err(AppError('Non-HTTP data source not supported'));
     }
 
-    return await _remoteDataSource.fetchReels();
+    return _remoteDataSource.fetchReels();
   }
 }
